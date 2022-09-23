@@ -5,9 +5,21 @@ var about = document.querySelector('#aabout')
 var contact = document.querySelector('#acontact')
 var menuBtn = document.querySelector('.menu-btn i')
 var w = document.querySelector('body')
+var backtop = document.querySelector('.gotopbtn')
+
 function onScroll() {
 
   console.log(scrollY)
+}
+function showBackToTopButtonOnScroll() {
+  if (scrollY > 500) {
+    backtop.classList.add('show')
+  }if (scrollY > 5000) {
+    backtop.classList.remove('show')
+  }
+  if (scrollY < 500) {
+    backtop.classList.remove('show')
+  }
 }
 function hoverHome() {
   if (scrollY > 0) {
@@ -114,7 +126,8 @@ onScroll();
 hoverHome();
 hoverProduct();
 hoverAbout();
-hoverContact()
+hoverContact();
+showBackToTopButtonOnScroll()
 }
 
 
