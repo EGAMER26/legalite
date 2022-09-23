@@ -6,6 +6,8 @@ var contact = document.querySelector('#acontact')
 var menuBtn = document.querySelector('.menu-btn i')
 var w = document.querySelector('body')
 var backtop = document.querySelector('.gotopbtn')
+var navigation = document.querySelector('#navigation')
+
 
 function onScroll() {
 
@@ -19,6 +21,13 @@ function showBackToTopButtonOnScroll() {
   }
   if (scrollY < 500) {
     backtop.classList.remove('show')
+  }
+}
+function showNavOnScroll() {
+  if (scrollY == 0) {
+    navigation.classList.add('scroll')
+  } else {
+    navigation.classList.remove('scroll')
   }
 }
 function hoverHome() {
@@ -127,7 +136,8 @@ hoverHome();
 hoverProduct();
 hoverAbout();
 hoverContact();
-showBackToTopButtonOnScroll()
+showBackToTopButtonOnScroll();
+showNavOnScroll()
 }
 
 

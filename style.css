@@ -908,7 +908,9 @@ margin-bottom: 15.5rem
   transform: translateY(0%);
  
 }
-
+.scroll {
+  background: transparent;
+}
 
 
 
