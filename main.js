@@ -12,34 +12,34 @@ function onScroll() {
 function hoverHome() {
   if (scrollY > 0) {
     show.classList.add('active')
-  }if (scrollY > 1188) {
+  }if (scrollY > 699) {
     show.classList.remove('active')
   }
 }
 function hoverProduct() {
-  if (scrollY > 1188) {
+  if (scrollY > 699) {
     product.classList.add('active')
-  }if (scrollY > 4137) {
+  }if (scrollY > 2175) {
     product.classList.remove('active')
-  }if (scrollY < 1189) {
+  }if (scrollY < 699) {
     product.classList.remove('active')
   }
 }
 function hoverAbout() {
-  if (scrollY > 4138) {
+  if (scrollY > 2176) {
     about.classList.add('active')
-  }if (scrollY > 7146) {
+  }if (scrollY > 3414) {
     about.classList.remove('active')
-  }if (scrollY < 4138) {
+  }if (scrollY < 2176) {
     about.classList.remove('active')
   }
 }
 function hoverContact() {
-  if (scrollY > 7145) {
+  if (scrollY > 3414) {
     contact.classList.add('active')
   }if (scrollY > 9950) {
     contact.classList.remove('active')
-  }if (scrollY < 7147) {
+  }if (scrollY < 3414) {
     contact.classList.remove('active')
   }
 }
