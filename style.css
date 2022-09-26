@@ -5,13 +5,14 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Martel', serif;
+  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
   text-decoration: none;
   margin: auto;
   justify-content: center;
   text-align: center;
   list-style: none;
+  
 }
 html {
   scroll-behavior: smooth;
@@ -20,6 +21,9 @@ body {
   font-size: 1.6rem;
   margin: auto;
   
+}
+body button {
+  cursor: pointer;
 }
 
 /* ------------------NAV------------------ */
@@ -63,6 +67,9 @@ nav ul li a {
   transition: all 0.4s ease;
   color: #d0a144;
 }
+#navigation a img {
+  margin-inline: 0;
+}
 .active {
   background: black;
   color: white;
@@ -80,6 +87,7 @@ nav .menu-btn i {
   cursor: pointer;
   z-index: 4;
   display: none;
+
 }
 @media (max-width: 620px) {
   ul .open {
@@ -128,6 +136,17 @@ nav .menu-btn i {
     color: #295c7a;
   }
 }
+ 
+
+
+
+
+
+
+
+
+
+
 
 /* ------------------HEADER------------------ */
 body header {
@@ -144,6 +163,7 @@ body header {
 h1 {
   font-size: 4rem;
   width: 323px;
+  
 }
 p {
   font-size: 2rem;
@@ -592,18 +612,143 @@ footer header li {
   html {
     min-width: 100vw;
   }
+  /* -----------------NAV---------------- */
+  .navSB {
+    margin-inline: 2rem;
+  }
+   /* -----------------POPUP---------------- */
+.popup_wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0 ,0, .5);
+  position: fixed;
+  z-index: 6;
+  align-content: center;
+  display: flex;
+  transform: translateY(100%);
+  transition: 200ms;
+  
+}
+.openpopup {
+  transform: translateY(0%);
+}
+
+.popup {
+  background: white;
+  width: 50%;
+  height: 50rem;
+  /* margin-block: auto; */
+  border-radius: 4rem;
+  display: flex;
+  min-width: 700px;
+  max-width: 800px;
+
+}
+.popup a {
+  color: white;
+}
+.socialConectLinks {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+.socialConectLinks button {
+  margin: 1rem auto 1rem 4em;
+  width: 25rem;
+  height: 4rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 1rem;
+  border-style: none;
+  padding-left: .5rem;
+}
+.facebook {
+  background: #3b5998;
+  display: flex;
+  align-content: center;
+}
+.facebook a {
+  font-size: 1.2rem;
+margin: 0;
+}
+.socialConectLinks .google {
+  background-color: white;
+  border: solid 2px rgba(0, 0 ,0, .2);
+  align-items: center;
+  display: flex;
+}
+.google a {
+  color: rgba(0, 0 ,0, .5);
+  margin: 0;
+  height: 30px;
+}
+.google h4  {
+  height: 2.2rem;
+  margin-top: .5rem;
+  font-size: 1.2rem;
+
+}
+.popup h2 {
+  font-size: 2.4rem;
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
+}
+.sectionLogin .slaaa h2 {
+position: relative;
+bottom: 100rem;
+}
+
+.sectionLogin {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.allLogin {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.sectionLogin input {
+  border: solid 1px black;
+  border-radius: .5rem;
+  height: 4rem;
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+border-radius: 5px;
+position: relative;
+right: 2rem;
+}
+.sectionLogin .label {
+  position: absolute;
+  bottom: 29.8rem;
+  right: 39%;
+  font-size: 1rem;
+  background: white;
+  z-index: 7;
+
+}
+.sectionLogin .labelSenha {
+  position: absolute;
+  bottom: 24.8rem;
+  right: 39%;
+  font-size: 1rem;
+  background: white;
+  z-index: 7;
+}
+
+  
   /* -----------------BODY---------------- */
 
   html body {
-    /* padding-inline: 19.5rem; */
-    /* width: auto; */
     margin-inline: 0;
     overflow-x: hidden;
-    /* padding: 0; */
   }
 
   html body header {
-    margin: 2rem 0 0 0;
     padding-block: 1rem 0;
     background-image: none;
     display: flex;
@@ -614,7 +759,6 @@ footer header li {
     padding-inline: 10rem;
   }
   .picture picture img {
-    /* width: 1000px */
     max-width: 500px;
     min-width: 500px;
     position: relative;
@@ -960,4 +1104,4 @@ margin-bottom: 15.5rem
   footer header .touch {
     margin-inline: 0;
   }
-}
+

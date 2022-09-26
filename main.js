@@ -7,7 +7,7 @@ var menuBtn = document.querySelector('.menu-btn i')
 var w = document.querySelector('body')
 var backtop = document.querySelector('.gotopbtn')
 var navigation = document.querySelector('#navigation')
-
+var login = document.querySelector('.login_icon')
 
 function onScroll() {
 
@@ -33,34 +33,34 @@ function showNavOnScroll() {
 function hoverHome() {
   if (scrollY > 0) {
     show.classList.add('active')
-  }if (scrollY > 699) {
+  }if (scrollY > 678) {
     show.classList.remove('active')
   }
 }
 function hoverProduct() {
-  if (scrollY > 699) {
+  if (scrollY > 680) {
     product.classList.add('active')
-  }if (scrollY > 2175) {
+  }if (scrollY > 2155) {
     product.classList.remove('active')
-  }if (scrollY < 699) {
+  }if (scrollY < 675) {
     product.classList.remove('active')
   }
 }
 function hoverAbout() {
-  if (scrollY > 2176) {
+  if (scrollY > 2157) {
     about.classList.add('active')
-  }if (scrollY > 3414) {
+  }if (scrollY > 3393) {
     about.classList.remove('active')
-  }if (scrollY < 2176) {
+  }if (scrollY < 2157) {
     about.classList.remove('active')
   }
 }
 function hoverContact() {
-  if (scrollY > 3414) {
+  if (scrollY > 3395) {
     contact.classList.add('active')
   }if (scrollY > 9950) {
     contact.classList.remove('active')
-  }if (scrollY < 3414) {
+  }if (scrollY < 3395) {
     contact.classList.remove('active')
   }
 }
@@ -70,6 +70,13 @@ function menuShow() {
     ul.classList.remove('open')
   } else {
     ul.classList.add('open')
+  }
+}
+function openLogin() {
+  if (login.classList.contains('openpopup')) {
+    login.classList.remove('openpopup')
+  } else {
+    login.classList.add('openpopup')
   }
 }
 function closeMenu() {
