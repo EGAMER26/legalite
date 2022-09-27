@@ -9,6 +9,15 @@ var backtop = document.querySelector('.gotopbtn')
 var navigation = document.querySelector('#navigation')
 var login = document.querySelector('.popup_wrapper')
 var showw = document.querySelector('.backgroundLogin')
+var showwcadastro = document.querySelector('.backgroundcadastro')
+var sectioncadastro = document.querySelector('.cadastrowrapper')
+
+
+
+
+
+
+
 function onScroll() {
 
   console.log(scrollY)
@@ -41,10 +50,39 @@ function showww() {
     else {showw.classList.add('showw')}
   }
 
+
+
+function contentcadastro() {
+  if (sectioncadastro.classList.contains('show')) {
+    sectioncadastro.classList.remove('show')}
+    else {
+      sectioncadastro.classList.add('show')}
+}
+
+
+  function backcadastro() {
+    if (showwcadastro.classList.contains('showw')) {
+      showwcadastro.classList.remove('showw')}
+      else {showwcadastro.classList.add('showw')}
+    }
+
+function allbackcadastro() {
+  overshowlogin();
+  backcadastro();
+  contentcadastro();
+  loginOverflwY()
+}
+function closecadastro() {
+  contentcadastro();
+  backcadastro();
+  loginOverflwY()
+
+}
+
 function showBackToTopButtonOnScroll() {
   if (scrollY > 500) {
     backtop.classList.add('show')
-  }if (scrollY > 5000) {
+  }if (scrollY > 50000) {
     backtop.classList.remove('show')
   }
   if (scrollY < 500) {

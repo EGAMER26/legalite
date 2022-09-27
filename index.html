@@ -55,48 +55,83 @@
             <i onclick="menuShoww()"><img src="/assets/icn menu .icn-xs.png" /></i>
           </div>
         </nav>
-        <div class="backgroundLogin">
-
-          <img  width="100%" src="/assets/backgroundlogin.jpg" alt="">
-        </div>
-        <div class="popup_wrapper">
+        <div class="allhomelogin">
+          <div class = "backgroundLogin">
+            <img width = "100%" src = "/assets/backgroundlogin.jpg" alt = "">
+          </div>
+          <div class = "backgroundcadastro">
+            <img width = "100%" height="100%" src = "/assets/backgroundcadastro.jpg" alt = "">
+          </div>
+          <div class = "popup_wrapper">
           
-          <div class="popup">
-    <a onclick="overshowlogin()" class="closeOpenLogin" > <img width="20px" src="/assets/closeLogin.png" alt="close icone"></a>
-    <div class="socialConectLinks">
-      <h2 class="entreContato">Entre com suas redes sociais</h2>
-      <button class="facebook" ><a class="facebook" href="https://www.facebook.com/"><img width="30px" height="30px" src="/assets/facebookicon.png" alt=""></a> <a href="https://www.facebook.com/"><h4> Entrar com Facebook</h4></a></button>
-      <button class="google" ><a href="https://www.google.com/"><img width="30px" height="30px" src="/assets/googleicon.png" alt=""> </a> <a href="http://www.google.com.br/"><h4>Entrar com Google</h4></a></button>
-    </div>
-    <div class="linha"><img src="/assets/linha.png" alt=""><div class="ou"> <p>OU</p></div></div>
-    <div class="sectionLogin">
-      <h2 class="slaaa" >Digite o seu e-mail e senha</h2>
-      <div class="allLogin">
-
-        <form action="" autocomplete="on"></form>
-        <div class="emailgeral">
-          <div class="email">
-            
-            <label class="label" for="email">E-mail</label>
-            <input type="email" id="email">
+            <div    class   = "popup">
+            <a      onclick = "overshowlogin()" class = "closeOpenLogin" > <img width        = "20px" src                             = "/assets/closeLogin.png" alt = "close icone"></a>
+            <div    class   = "socialConectLinks">
+            <h2     class   = "entreContato">Entre com suas redes sociais</h2>
+            <button class   = "facebook" ><a class    = "facebook" href                      = "https://www.facebook.com/"><img width = "30px" height                = "30px" src                   = "/assets/facebookicon.png" alt = ""></a> <a href = "https://www.facebook.com/"><h4> Entrar com Facebook</h4></a></button>
+            <button class   = "google" ><a href       = "https://www.google.com/"><img width = "30px" height                          = "30px" src                   = "/assets/googleicon.png" alt = ""> </a> <a href               = "http://www.google.com.br/"><h4>Entrar com Google</h4></a></button>
+              </div>
+              <div class = "linha"><img src = "/assets/linha.png" alt = ""><div class = "ou"> <p>OU</p></div></div>
+              <div class = "sectionLogin">
+              <h2  class = "slaaa" >Digite o seu e-mail e senha</h2>
+              <div class = "allLogin">
+          <form action = "" autocomplete = "on"></form>
+          <div  class  = "emailgeral">
+          <div  class  = "email">
+          
+              <input type  = "email" id  = "email" placeholder="E-mail">
+            </div>
+          </div>
+          <div class = "senha">
+          
+            <input type  = "password" id    = "senha" placeholder="Senha">
+          </div>
+                </div>
+                
+                <div class = "forgot">
+                <a   href  = "#">Esqueci minha senha</a>
+                </div>
+                <button class = "entrar"><a href = "#">Entrar</a></button>
+              </div>
+          
+            </div>
+            <div onclick = "allbackcadastro()" class = "popupCadastro"><button>Cadastre-se</button></div>
+          </div>
+          <div class = "cadastrowrapper">
+          
+          
+          <div    class   = "popup cadastro">
+          <a      onclick = "closecadastro()" class = "closeOpenLogin" > <img width        = "20px" src                             = "/assets/closeLogin.png" alt = "close icone"></a>
+          <div    class   = "socialConectLinks">
+          <h2     class   = "entreContato">Cadastre-se com suas redes sociais</h2>
+          <button class   = "facebook" ><a class    = "facebook" href                      = "https://www.facebook.com/"><img width = "30px" height                = "30px" src                   = "/assets/facebookicon.png" alt = ""></a> <a href = "https://www.facebook.com/"><h4> Entrar com Facebook</h4></a></button>
+          <button class   = "google" ><a href       = "https://www.google.com/"><img width = "30px" height                          = "30px" src                   = "/assets/googleicon.png" alt = ""> </a> <a href               = "http://www.google.com.br/"><h4>Entrar com Google</h4></a></button>
+            </div>
+            <div class = "linha"><img src = "/assets/linha.png" alt = ""><div class = "ou"> <p>OU</p></div></div>
+            <div class = "sectionLogin">
+            <h2  class = "slaaa" >Crie uma conta com seu e-mail</h2>
+            <div class = "allLogin">
+          
+                <form action = "" autocomplete = "on"></form>
+                <div  class  = "emailgeral">
+                <div  class  = "email">
+          
+            <input type = "text" maxlength = "30" id = "email" placeholder = "Nome completo">
+          </div>
+                </div>
+                <div class = "senha">
+          
+          <input type = "email" maxlength = "50" id = "senha" placeholder = "E-mail">
+                </div>
+              </div>
+              
+              
+              <button class = "entrar buttoncadastro"><a href = "#">Cadastrar</a></button>
+            </div>
+          
+          </div>
           </div>
         </div>
-        <div class="senha">
-          
-          <label class="labelSenha" for="senha">senha</label>
-          <input type="password" id="senha">
-        </div>
-      </div>
-      
-      <div class="forgot">
-      <a href="#">Esqueci minha senha</a>
-      </div>
-      <button class="entrar"><a href="#">Entrar</a></button>
-    </div>
-
-  </div>
-  <div class="popupCadastro"><button>Cadastre-se</button></div>
-</div>
     
     <header>
       <div class="deskContant">

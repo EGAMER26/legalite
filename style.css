@@ -90,6 +90,34 @@ nav .menu-btn i {
 
 }
 @media (max-width: 620px), (max-width: 1023px) {
+  .allhomelogin {
+    display: none;
+  }
+  /* ---------------------BUTTONGOTOTOP--------------- */
+  .gotopbtn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background:#d0a144;
+    bottom: 4px;
+    right: 5px;
+  
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+    border-radius: 100%;
+  
+  
+    transform: translateY(200%);
+    transition: 200ms;
+    /* visibility: hidden; */
+  }
+  .show {
+    transform: translateY(0%);
+   
+  }
   .popup_wrapper {
     display: none;
 
@@ -620,11 +648,37 @@ footer header li {
   .navSB {
     margin-inline: 2rem;
   }
+  /* -----------------POPUPCADASTRO---------------- */
+  .cadastrowrapper {
+    width: 100vw;
+  height: 100vh;
+    transform: translateY(-100%);
+    z-index: 6;
+    transition: 400ms;
+    position: fixed;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .backgroundcadastro {
+    position:absolute;
+    position: fixed;
+    
+    z-index: 5;
+    transform: translateX(-100%);
+    transition: 400ms;
+  }
+.cadastro .buttoncadastro {
+  margin: 3rem 0 0 0;
+}
+
    /* -----------------POPUP---------------- */
    #login_icon {
     cursor: pointer;
    }
 .popup_wrapper {
+  padding-block: 5%;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0 ,0, .5);
@@ -678,12 +732,13 @@ footer header li {
   position: relative;
   background: white;
   width: 60%;
-  height: 50rem;
+  height: 100%;
   /* margin-block: auto; */
   border-radius: 4rem;
   display: flex;
   min-width: 700px;
   max-width: 800px;
+  max-height: 600px;
 
 }
 .popup a {
@@ -797,7 +852,7 @@ right: 3rem;
   
 }
 .sectionLogin .label {
-  position: absolute;
+  position: fixed;
   bottom: 29.1rem;
   font-size: 1rem;
   background: white;
@@ -847,7 +902,7 @@ color: white;
   height: 50px;
   border-radius: 5px;
   border: none;
-  background-color: #white;
+  background-color: white;
 
 }
 .popupCadastro button:hover {
@@ -855,7 +910,7 @@ color: white;
   color: white;
   border: none;
 }
-}
+
 
 .overflowY {
   overflow-y: hidden;
@@ -1249,3 +1304,4 @@ margin-bottom: 15.5rem
     margin-inline: 0;
   }
 
+}
