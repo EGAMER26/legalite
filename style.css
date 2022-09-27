@@ -634,12 +634,23 @@ footer header li {
   display: flex;
   flex-direction: column;
  transform: translateY(100%);
-  transition: 300ms;
+  transition: 400ms;
   
 }
 .popup_wrapper .openpopup {
   transform: translateY(0%);
 
+}
+.backgroundLogin {
+  position:absolute;
+  position: fixed;
+  
+  z-index: 5;
+  transform: translateX(100%);
+  transition: 400ms;
+}
+.showw {
+  transform: translateX(0%);
 }
 .linha {
   position: relative;
@@ -787,7 +798,7 @@ right: 3rem;
 }
 .sectionLogin .label {
   position: absolute;
-  bottom: 27.9rem;
+  bottom: 29.1rem;
   font-size: 1rem;
   background: white;
   z-index: 7;
@@ -795,7 +806,7 @@ right: 3rem;
 }
 .sectionLogin .labelSenha {
   position: absolute;
-  bottom: 22.9rem;
+  bottom: 22.1rem;
   font-size: 1rem;
   background: white;
   z-index: 7;
@@ -846,8 +857,9 @@ color: white;
 }
 }
 
-
-
+.overflowY {
+  overflow-y: hidden;
+}
 
 
 
@@ -1181,6 +1193,7 @@ margin-bottom: 15.5rem
 
 .show {
   transform: translateY(0%);
+  transform: translateX(0%);
  
 }
 .scroll {

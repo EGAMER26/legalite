@@ -8,11 +8,39 @@ var w = document.querySelector('body')
 var backtop = document.querySelector('.gotopbtn')
 var navigation = document.querySelector('#navigation')
 var login = document.querySelector('.popup_wrapper')
-
+var showw = document.querySelector('.backgroundLogin')
 function onScroll() {
 
   console.log(scrollY)
 }
+
+
+function loginOverflwY() {
+  if (w.classList.contains('overflowY')){
+  w.classList.remove('overflowY')}
+  else 
+  {w.classList.add('overflowY')}
+  }
+
+  function openLogin() {
+    if (login.classList.contains('show')) {
+      login.classList.remove('show')
+    } else {
+      login.classList.add('show')
+    }
+  }
+
+function overshowlogin() {
+  loginOverflwY();
+  openLogin();
+  showww()
+}
+function showww() {
+  if (showw.classList.contains('showw')) {
+    showw.classList.remove('showw')}
+    else {showw.classList.add('showw')}
+  }
+
 function showBackToTopButtonOnScroll() {
   if (scrollY > 500) {
     backtop.classList.add('show')
@@ -72,13 +100,7 @@ function menuShow() {
     ul.classList.add('open')
   }
 }
-function openLogin() {
-  if (login.classList.contains('show')) {
-    login.classList.remove('show')
-  } else {
-    login.classList.add('show')
-  }
-}
+
 function closeMenu() {
   if (ul.classList.contains('open')) {
     ul.classList.remove('open')
