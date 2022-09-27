@@ -670,12 +670,47 @@ footer header li {
     transition: 400ms;
   }
 .cadastro .buttoncadastro {
-  margin: 3rem 0 0 0;
+  margin: 3rem 4rem;
+  width: 200px;
+}
+.gender {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  gap: 0;
+}
+.gender p {
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  font-size: 1.4rem;
+  color: #d0a144;
+}
+.gender .genero input {
+  position: relative;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.gender .genero {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content:start;
+  width: 100%;
+}
+.idade h4 {
+  color: #d0a144;
 }
 
    /* -----------------POPUP---------------- */
    #login_icon {
     cursor: pointer;
+    margin-left: 2rem;
    }
 .popup_wrapper {
   padding-block: 5%;
@@ -710,13 +745,15 @@ footer header li {
   position: relative;
   margin-inline: auto;
   width: 50px;
+  height: 100%;
+  min-height: none;
 }
 .ou {
   width: 100%
 }
 .ou p {
   position: absolute;
-  top: 170px;
+  top: 250px;
   left: 0px;
   background-color: white;
   width: 50px;
@@ -892,9 +929,12 @@ color: white;
 }
 .popupCadastro {
   margin-top: 0;
+  z-index: 150;
 }
 .popupCadastro button {
+  z-index: 150;
   margin-inline:.6rem 0 ;
+  margin-top: 1rem;
   font-size: 1.8rem;
   font-weight: 800;
   padding: 0;
