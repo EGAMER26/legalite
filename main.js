@@ -7,7 +7,7 @@ var menuBtn = document.querySelector('.menu-btn i')
 var w = document.querySelector('body')
 var backtop = document.querySelector('.gotopbtn')
 var navigation = document.querySelector('#navigation')
-var login = document.querySelector('.login_icon')
+var login = document.querySelector('.popup_wrapper')
 
 function onScroll() {
 
@@ -49,18 +49,18 @@ function hoverProduct() {
 function hoverAbout() {
   if (scrollY > 2157) {
     about.classList.add('active')
-  }if (scrollY > 3393) {
+  }if (scrollY > 3368) {
     about.classList.remove('active')
   }if (scrollY < 2157) {
     about.classList.remove('active')
   }
 }
 function hoverContact() {
-  if (scrollY > 3395) {
+  if (scrollY > 3369) {
     contact.classList.add('active')
   }if (scrollY > 9950) {
     contact.classList.remove('active')
-  }if (scrollY < 3395) {
+  }if (scrollY < 3369) {
     contact.classList.remove('active')
   }
 }
@@ -73,10 +73,10 @@ function menuShow() {
   }
 }
 function openLogin() {
-  if (login.classList.contains('openpopup')) {
-    login.classList.remove('openpopup')
+  if (login.classList.contains('show')) {
+    login.classList.remove('show')
   } else {
-    login.classList.add('openpopup')
+    login.classList.add('show')
   }
 }
 function closeMenu() {

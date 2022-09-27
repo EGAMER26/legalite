@@ -49,19 +49,21 @@
         ><img
           src="/assets/icn shopping-cart .icn-xs.png"
           alt="icone carrinho de compra"
-      /></a>
-      <button onclick="openLogin()" class="login_icon"><img width="25px" src="/assets/Login.png" alt="Login icone"></button>
-      <div class="menu-btn">
-        <i onclick="menuShoww()"><img src="/assets/icn menu .icn-xs.png" /></i>
-      </div>
-    </nav>
-<div class="popup_wrapper">
-  <div class="popup">
+          /></a>
+          <a onclick="openLogin()" id="login_icon"><img width="25px" src="/assets/Login.png" alt="Login icone"></a>
+          <div class="menu-btn">
+            <i onclick="menuShoww()"><img src="/assets/icn menu .icn-xs.png" /></i>
+          </div>
+        </nav>
+        <div class="popup_wrapper">
+          <div class="popup">
+    <a onclick="openLogin()" class="closeOpenLogin" > <img width="20px" src="/assets/closeLogin.png" alt="close icone"></a>
     <div class="socialConectLinks">
       <h2 class="entreContato">Entre com suas redes sociais</h2>
       <button class="facebook" ><a class="facebook" href="https://www.facebook.com/"><img width="30px" height="30px" src="/assets/facebookicon.png" alt=""></a> <a href="https://www.facebook.com/"><h4> Entrar com Facebook</h4></a></button>
       <button class="google" ><a href="https://www.google.com/"><img width="30px" height="30px" src="/assets/googleicon.png" alt=""> </a> <a href="http://www.google.com.br/"><h4>Entrar com Google</h4></a></button>
     </div>
+    <div class="linha"><img src="/assets/linha.png" alt=""><div class="ou"> <p>OU</p></div></div>
     <div class="sectionLogin">
       <h2 class="slaaa" >Digite o seu e-mail e senha</h2>
       <div class="allLogin">
@@ -77,12 +79,18 @@
         <div class="senha">
           
           <label class="labelSenha" for="senha">senha</label>
-          <input type="senha" id="senha">
+          <input type="password" id="senha">
         </div>
       </div>
+      
+      <div class="forgot">
+      <a href="#">Esqueci minha senha</a>
+      </div>
+      <button class="entrar"><a href="#">Entrar</a></button>
     </div>
 
   </div>
+  <div class="popupCadastro"><button>Cadastre-se</button></div>
 </div>
     
     <header>
