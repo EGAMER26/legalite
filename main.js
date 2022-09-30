@@ -113,7 +113,7 @@ function hoverProduct() {
   }
 }
 function hoverAbout() {
-  if (scrollY > 2157) {
+  if (scrollY > 2156) {
     about.classList.add('active')
   }if (scrollY > 3368) {
     about.classList.remove('active')
@@ -189,6 +189,7 @@ header img,
 #contact .cardContact3,
 #contact h2,
 #contact button,
+#partners,
 footer .links,
 footer .touch .touch1,
 footer .touch .touch2,
