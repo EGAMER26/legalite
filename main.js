@@ -18,10 +18,7 @@ var sectioncadastro = document.querySelector('.cadastrowrapper')
 
 
 
-function onScroll() {
 
-  console.log(scrollY)
-}
 
 
 function loginOverflwY() {
